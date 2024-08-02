@@ -1,4 +1,4 @@
-# Laboritorio 1
+# Laboritorio 1 (Descargar imagenes)
 
 # Se descargó imagen oficial de ubuntu
 Using default tag: latest
@@ -21,3 +21,23 @@ c387064957b7: Pull complete
 Digest: sha256:fea84f3a3b72c41efe7fc3b07ae209c6856b852b942c05fa88b747b74f70e711
 Status: Downloaded newer image for python:3.9
 docker.io/library/python:3.9
+
+# laboratorio 1 (Ejecutar nuestro contenedor)
+Ejecuto un contenedor de Nginx en segundo plano, mapeando el puerto 8080 del host al puerto 80 del contenedor:
+627a94ba73a6e36f477559c0f59c2e6570406bdfb7626e9807db34c1e8d0789e
+
+Ejecuto un contenedor de Ubuntu en modo interactivo:
+root@8ee8f3479741:/# 
+
+Ejecuto un servidor web Apache en segundo plano, mapeando el puerto 8000 del host al puerto 80 del contenedor
+Unable to find image 'httpd:latest' locally
+latest: Pulling from library/httpd
+efc2b5ad9eec: Already exists 
+fce1785eb819: Pull complete 
+4f4fb700ef54: Pull complete 
+f214daa0692f: Pull complete 
+05383fd8b2b3: Pull complete 
+88ad12232aa1: Pull complete 
+Digest: sha256:932ac36fabe1d2103ed3edbe66224ed2afe0041b317bcdb6f5d9be63594f0030
+Status: Downloaded newer image for httpd:latest
+d6844eab2631ec826b803e50a084ff63df6d3204cdce17aed50a3dae71d52492
