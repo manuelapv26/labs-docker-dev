@@ -41,3 +41,22 @@ f214daa0692f: Pull complete
 Digest: sha256:932ac36fabe1d2103ed3edbe66224ed2afe0041b317bcdb6f5d9be63594f0030
 Status: Downloaded newer image for httpd:latest
 d6844eab2631ec826b803e50a084ff63df6d3204cdce17aed50a3dae71d52492
+
+# Laboratorio 1 (Eliminar contenedores)
+Eliminamos el contenedor de ubuntu: 
+8ee8f3479741
+
+visualizacion despues de eliminar ubuntu:
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                                   NAMES
+d6844eab2631   httpd     "httpd-foreground"       8 minutes ago    Up 8 minutes    0.0.0.0:8000->80/tcp, :::8000->80/tcp   beautiful_engelbart
+627a94ba73a6   nginx     "/docker-entrypoint.…"   21 minutes ago   Up 21 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp   charming_kepler
+
+Eliminamos todos los contenedores detenidos:
+@manuelapv26 ➜ /workspaces/labs-docker-dev (main) $ docker container prune -f
+Total reclaimed space: 0B
+
+solo se eliminan los que estan detenidos:
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                                   NAMES
+d6844eab2631   httpd     "httpd-foreground"       12 minutes ago   Up 12 minutes   0.0.0.0:8000->80/tcp, :::8000->80/tcp   beautiful_engelbart
+627a94ba73a6   nginx     "/docker-entrypoint.…"   25 minutes ago   Up 25 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp   charming_kepler
