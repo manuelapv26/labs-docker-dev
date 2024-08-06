@@ -60,3 +60,20 @@ solo se eliminan los que estan detenidos:
 CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                                   NAMES
 d6844eab2631   httpd     "httpd-foreground"       12 minutes ago   Up 12 minutes   0.0.0.0:8000->80/tcp, :::8000->80/tcp   beautiful_engelbart
 627a94ba73a6   nginx     "/docker-entrypoint.…"   25 minutes ago   Up 25 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp   charming_kepler
+
+# Laboratorio 2 (Crear un Dockerfile simple con Ubuntu y actualizar paquetes)
+
+[+] Building 8.8s (6/6) FINISHED                                                                                                      docker:default
+ => [internal] load build definition from dockerfile                                                                                            0.0s
+ => => transferring dockerfile: 97B                                                                                                             0.0s
+ => [internal] load metadata for docker.io/library/ubuntu:latest                                                                                0.0s
+ => [internal] load .dockerignore                                                                                                               0.1s
+ => => transferring context: 2B                                                                                                                 0.0s
+ => [1/2] FROM docker.io/library/ubuntu:latest                                                                                                  0.1s
+ => [2/2] RUN apt-get update && apt-get upgrade -y                                                                                              7.6s
+ => exporting to image                                                                                                                          0.6s
+ => => exporting layers                                                                                                                         0.4s
+ => => writing image sha256:afcc71d97f3cb1f4491594c2b33682793d29f865ffbf6e0cde3ba1065b2c2e79                                                    0.0s
+ => => naming to docker.io/library/ubuntu-updated:latest 
+
+ 
