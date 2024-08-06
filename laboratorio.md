@@ -107,3 +107,6 @@ d6844eab2631   httpd     "httpd-foreground"       12 minutes ago   Up 12 minutes
  => => exporting layers                                                                                                                         0.0s
  => => writing image sha256:1d3984a11d2c324739d0220893f00b9fe057e375e345b4fb1d94618dbe255348                                                    0.0s
  => => naming to docker.io/library/my-nginx:latest 
+
+ # laboratorio 2 (Tema 2: Instrucciones comunes en Dockerfile)
+ 
