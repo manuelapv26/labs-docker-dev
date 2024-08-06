@@ -93,3 +93,17 @@ d6844eab2631   httpd     "httpd-foreground"       12 minutes ago   Up 12 minutes
 
  # la aplicación se está ejecutando en el puerto 80
  de376f0f21d2a52a4d3a171333e33353f8b8153aa3b57f6f8ee7e33c2b8524ef
+
+ # Modificamos el Dockerfile de Nginx para exponer el puerto 80
+ [+] Building 0.5s (6/6) FINISHED                                                                                                      docker:default
+ => [internal] load build definition from dockerfile                                                                                            0.1s
+ => => transferring dockerfile: 148B                                                                                                            0.0s
+ => [internal] load metadata for docker.io/library/ubuntu:latest                                                                                0.0s
+ => [internal] load .dockerignore                                                                                                               0.1s
+ => => transferring context: 2B                                                                                                                 0.0s
+ => [1/2] FROM docker.io/library/ubuntu:latest                                                                                                  0.0s
+ => CACHED [2/2] RUN apt-get update && apt-get install -y nginx                                                                                 0.0s
+ => exporting to image                                                                                                                          0.1s
+ => => exporting layers                                                                                                                         0.0s
+ => => writing image sha256:1d3984a11d2c324739d0220893f00b9fe057e375e345b4fb1d94618dbe255348                                                    0.0s
+ => => naming to docker.io/library/my-nginx:latest 
