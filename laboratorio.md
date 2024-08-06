@@ -77,4 +77,19 @@ d6844eab2631   httpd     "httpd-foreground"       12 minutes ago   Up 12 minutes
  => => naming to docker.io/library/ubuntu-updated:latest 
 
  # Crear un Dockerfile para instalar Nginx en Ubuntu
- 
+
+[+] Building 13.9s (6/6) FINISHED                                                                                                     docker:default
+ => [internal] load build definition from dockerfile                                                                                            0.1s
+ => => transferring dockerfile: 138B                                                                                                            0.0s
+ => [internal] load metadata for docker.io/library/ubuntu:latest                                                                                0.0s
+ => [internal] load .dockerignore                                                                                                               0.0s
+ => => transferring context: 2B                                                                                                                 0.0s
+ => CACHED [1/2] FROM docker.io/library/ubuntu:latest                                                                                           0.0s
+ => [2/2] RUN apt-get update && apt-get install -y nginx                                                                                       12.7s
+ => exporting to image                                                                                                                          0.8s
+ => => exporting layers                                                                                                                         0.7s
+ => => writing image sha256:4f5a04c602bc174672b9a0eafc6fa9f8c00611499b1de9205b969ad5ee1b013d                                                    0.0s
+ => => naming to docker.io/library/my-nginx:latest  
+
+ # la aplicación se está ejecutando en el puerto 80
+ de376f0f21d2a52a4d3a171333e33353f8b8153aa3b57f6f8ee7e33c2b8524ef
