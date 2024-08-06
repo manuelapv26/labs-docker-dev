@@ -76,4 +76,5 @@ d6844eab2631   httpd     "httpd-foreground"       12 minutes ago   Up 12 minutes
  => => writing image sha256:afcc71d97f3cb1f4491594c2b33682793d29f865ffbf6e0cde3ba1065b2c2e79                                                    0.0s
  => => naming to docker.io/library/ubuntu-updated:latest 
 
+ # Crear un Dockerfile para instalar Nginx en Ubuntu
  
